@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Buttons */
+.buttons-container {
+    display: flex;
+}
+
+.buttons-container .button {
+    margin-right: 16px;
+}
+
+.buttons-container .button:last-of-type {
+    margin-right: 0;
+}
+
+.button {
+    background:#444;
+    border: 1px solid #444;
+    padding: 8px 16px;
+    color:white;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button--secondary {
+    background: transparent;
+    border: 1px solid #444;
+    color: #444;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Form */
+.two-panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-panel > :nth-child(1) {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.hero {
+    background-color: #d9d9d9;
+}
+
+.hero-title {
+    margin-bottom: 32px;
+    font-size: 42px;
+}
+
+form {
+    padding: 0 30px;
+}
+
+.form-element {
+    margin-bottom: 32px;
+}
+
+.form-element label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-element input {
+    border: none;
+    padding: 8px 16px;
+}
+
+/* Links list */
+.link-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.link-list li,
+.link-list-item {
+    padding: 0 0 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.link-list li:last-of-type,
+.link-list-item:last-of-type {
+    border-bottom: none;
+}

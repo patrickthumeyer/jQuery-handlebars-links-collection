@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <title>jQuery: Links collection</title>
+  </head>
+
+  <body>
+    <section class="hero">
+      <section class="content-container two-panel">
+        <h1 class="hero-title">Link Collection</h1>
+
+        <form>
+          <div class="form-element">
+            <label for="">Title</label>
+            <input type="text" name="title" />
+          </div>
+
+          <div class="form-element">
+            <label for="">Description</label>
+            <input type="text" name="description" />
+          </div>
+
+          <div class="form-element">
+            <label for="">Link</label>
+            <input type="text" name="link" />
+          </div>
+
+          <div class="buttons-container">
+            <button type="reset" class="button button--secondary">Clear</button>
+            <button class="button">Add link</button>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <section class="content-container">
+      <ul class="link-list"></ul>
+    </section>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <li>
+          <h2>{{titleKey}} ({{linkKey}})</h2>
+          <p>{{descriptionKey}}</p>
+          <a href="{{linkKey}}">Click here</a>
+      </li>
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
